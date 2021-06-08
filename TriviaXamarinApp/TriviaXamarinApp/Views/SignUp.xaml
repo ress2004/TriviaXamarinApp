@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TriviaXamarinApp.Views.SignUp">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <Entry Placeholder="Enter Email:" Text="{Binding Email}"></Entry>
+            <Entry Placeholder="Enter Nickname: " Text="{Binding Nickname}"></Entry>
+            <Entry Placeholder="Enter Password: " Text="{Binding Password}"></Entry>
+            <Button Text="SignUp" Command="{Binding SignUpCommand}" ></Button>
+            <Label Text="{Binding Error}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
